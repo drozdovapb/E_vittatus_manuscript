@@ -13,11 +13,13 @@ Idea of the analysis: compare four studied _Eulimnogammarus_ species adequately 
   - Alignment: mafft in UGENE => manually trimmed to the coordinates of P. monodon COI 100-580 AF217843 (484-bp alignment)
 
     # split sequences into files for each species
-    `~/lib/kentUtils/faFilter -name=*verrucosus* 2_Eulimno_COI_wref_aln.trim.fa 3_Eve.fasta`
-    `~/lib/kentUtils/faFilter -name=*cyaneus* 2_Eulimno_COI_wref_aln.trim.fa 3_Ecy.fasta`
-    `~/lib/kentUtils/faFilter -name=*vittatus* 2_Eulimno_COI_wref_aln.trim.fa 3_Evi.fasta`
-    `~/lib/kentUtils/faFilter -name=*marituji* 2_Eulimno_COI_wref_aln.trim.fa 3_Ema.fasta`
-
+    ```{bash}
+    ~/lib/kentUtils/faFilter -name=*verrucosus* 2_Eulimno_COI_wref_aln.trim.fa 3_Eve.fasta
+    ~/lib/kentUtils/faFilter -name=*cyaneus* 2_Eulimno_COI_wref_aln.trim.fa 3_Ecy.fasta
+    ~/lib/kentUtils/faFilter -name=*vittatus* 2_Eulimno_COI_wref_aln.trim.fa 3_Evi.fasta
+    ~/lib/kentUtils/faFilter -name=*marituji* 2_Eulimno_COI_wref_aln.trim.fa 3_Ema.fasta
+    ```
+    
     # statistics on the # of sequences
     grep -c \> 3_*fasta
     #4_Ecy.fasta:160
