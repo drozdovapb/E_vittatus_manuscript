@@ -13,24 +13,27 @@ Idea of the analysis: compare four studied _Eulimnogammarus_ species adequately 
   - Alignment: mafft in UGENE => manually trimmed to the coordinates of P. monodon COI 100-580 AF217843 (484-bp alignment)
 
     # split sequences into files for each species
-    `~/lib/kentUtils/faFilter -name=*verrucosus* 2_Eulimno_COI_wref_aln.trim.fa 3_Eve.fasta`
-    `~/lib/kentUtils/faFilter -name=*cyaneus* 2_Eulimno_COI_wref_aln.trim.fa 3_Ecy.fasta`
-    `~/lib/kentUtils/faFilter -name=*vittatus* 2_Eulimno_COI_wref_aln.trim.fa 3_Evi.fasta`
-    `~/lib/kentUtils/faFilter -name=*marituji* 2_Eulimno_COI_wref_aln.trim.fa 3_Ema.fasta`
-
+    ```{bash}
+    ~/lib/kentUtils/faFilter -name=*verrucosus* 2_Eulimno_COI_wref_aln.trim.fa 3_Eve.fasta
+    ~/lib/kentUtils/faFilter -name=*cyaneus* 2_Eulimno_COI_wref_aln.trim.fa 3_Ecy.fasta
+    ~/lib/kentUtils/faFilter -name=*vittatus* 2_Eulimno_COI_wref_aln.trim.fa 3_Evi.fasta
+    ~/lib/kentUtils/faFilter -name=*marituji* 2_Eulimno_COI_wref_aln.trim.fa 3_Ema.fasta
+    ```
+    
     # statistics on the # of sequences
+    ```
     grep -c \> 3_*fasta
     #4_Ecy.fasta:160
     #4_Ema.fasta:63 ## had to remove 2 sequences manually; were not long enough
     #4_Eve.fasta:375 ## had to remove 2 sequences manually; were not long enough
     #4_Evi.fasta:141 ## had to remove 7 sequences manually; were not long enough
-
     ```
-  - Then loaded each alignment (`3_E*.fasta`) into SplitsTree4 and saved to nexus with splits (File => Save As).
-  - Nexus files (`3_SplitsTree/`) were loaded into `Fig9_draw_network_maps.R` to plot split networks to the same scale (Fig. 9A).
-  - The same alignments (`3_E*.fasta`) were used to calculate distances:
+    - Then loaded each alignment (`3_E*.fasta`) into SplitsTree4 and saved to nexus with splits (File => Save As).
+    - Nexus files (`3_SplitsTree/`) were loaded into `Fig9_draw_network_maps.R` to plot split networks to the same scale (Fig. 9A).
+    - The same alignments (`3_E*.fasta`) were used to calculate distances:
     - p and K2P distances with MEGA11 (see screenshot in the `3_mega` folder for an example)
     - patristic distances were calculated by first reconstructing the tree in IQ-TREE2 and then getting the matrix of distances from the Patristic software. The resulting files were edited to remove excessive commas at the end of each line (see screenshot in `3_iqtree_patristic` for details). (`grep ',$' eve.patristic.csv` and sed didn't work for some reason.)
+  
     ```{bash}
     iqtree2 -s ../2_alignment/3_Ecy.fasta -m GTR+I+G --prefix ecy
     iqtree2 -s ../2_alignment/3_Ema.fasta -m GTR+I+G --prefix ema
