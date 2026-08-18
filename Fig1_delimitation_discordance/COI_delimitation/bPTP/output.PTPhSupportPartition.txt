@@ -1,0 +1,25 @@
+# Most supported partition found by simple heuristic search
+Species 1 (support = 1.000)
+     EveW_Out
+
+Species 2 (support = 0.963)
+     EviPB83_PB_S,kbjd1002_KB_S,kbjd1003_KB_S,EviPB87_PB_S,kbjd1001_KB_S,EviPB86_PB_S,kbjd1004_KB_S,EviPB84_PB_S,SR5_SR_S,Vy3_Vy_S,Vy5_Vy_S,Vy2_Vy_S,Vy7_Vy_S,SR7_SR_S,SR1_SR_S,Vy8_Vy_S,SR2_SR_S,SR3_SR_S,Vy1_Vy_S,Vy9_Vy_S,Vy4_Vy_S,Vy6_Vy_S
+
+Species 3 (support = 0.559)
+     Uz11_Uz_Wa,Uz13_Uz_Wa,Uz21_Uz_Wa,Ya8_Ya_Wa,Uz23_Uz_Wa,Uz24_Uz_Wa,Uz32_Uz_Wa
+
+Species 4 (support = 0.899)
+     Uz31_Uz_Wa
+
+Species 5 (support = 0.882)
+     AmspA23_AL_W,EviL82_Li_W,AmspA57_To_W,AmspA79_To_W,BolR2_BR_W,AmspA58_To_W,AmspA62_To_W,Konn2_Ko_W,AmspA65_To_W,GB4_GR_W,GB5_GR_W,Konn12_Ko_W,Konn8_Ko_W,AmspA60_To_W,BG1_BG_W,Amspa61_To_W,Konn3_Ko_W,BolR1_BR_W,Konn11_Ko_W,Konn15_Ko_W,EviL79_Li_W,EviL81_Li_W,Uz22_Uz_W,AmspA59_To_W,EviL80_Li_W,AmspA63_To_W,Konn4_Ko_W,AmspA80_To_W,Y28_En_W,Konn10_Ko_W,Konn5_Ko_W,AmspA64_To_W,Konn9_Ko_W,Konn14_Ko_W,GB3_GR_W,Konn6_Ko_W,GB1_GR_W,Konn7_Ko_W,Konn13_Ko_W,Konn1_Ko_W
+
+Species 6 (support = 0.938)
+     UB6_UB_W
+
+Species 7 (support = 0.555)
+     155W1_SH_N,158W2_Se_N,155W2_SH_N,EviA101_So_N,EviA105_So_N,EviA99_So_N,Kur41_Ku_N,UB4_UB_N,AmspA41_So_N,EviA104_So_N,Ya5_Ya_N,EviA102_So_N,Ya3_Ya_N,EviA109_So_N,Ya2_Ya_N,Ankh2_An_N,Ya1_Ya_N,EviA107_So_N,EviA103_So_N,G1_Go_N,Uz12_Uz_N,EviA106_So_N,Ya4_Ya_N,Ya6_Ya_N,Ya9_Ya_N,G2_Go_N,Ur1_Ur_N,UB1_UB_N,G3_Go_N,UB2_UB_N,UB3_UB_N,UB5_UB_N,G5_Go_N,G4_Go_N,AmspA45_So_N,Uy78_Uy_N,Ya7_Ya_N,AmspA55_So_N,EviA100_So_N,Uy77_Uy_N,Kur0_Kr_N,EviA108_So_N,EviA98_So_N,Kur39_Ku_N,Kur40_Ku_N,Kur42_Ku_N,Uy79_Uy_N,EviA45_So_N
+
+Species 8 (support = 0.651)
+     158W1_Se_N
+
