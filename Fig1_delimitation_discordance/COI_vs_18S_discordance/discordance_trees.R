@@ -102,14 +102,15 @@ ggtree(tr=x, data=d1) +
   geom_nodelab(color="purple", size=4, nudge_x = -.001) + 
   annotate(geom = "text", x=.01, y=87, label = "aBayes > 0.7 & \n aLRT > 70% & \n UFB > 90%") + 
   annotate(geom="text", x=.001, y=90, label = intToUtf8(9679), col = "purple") +
-  geom_treescale(x = 0, y=100, offset = 1) 
+  geom_treescale(x = 0, y=100, offset = 1) + 
+  theme(legend.position = "inside", legend.position.inside = c(0.2, 0.8))
 
 
 ggsave("FigS2_disc_tree_more_colors.svg", width = 36, height=48, units="cm", device=svg)
-ggsave("FigS2_disc_tree_more_colors.png", width = 36, height=48, units="cm", device=png)
+ggsave("FigS2_disc_tree_more_colors.png", width = 36, height=48, units="cm", device=png, dpi = 180)
 ggsave("FigS2_disc_tree_more_colors.pdf", width = 36, height=48, units="cm", device=cairo_pdf)
 
-
+## FIG1D
 ## Sankey diagram
 ######
 #devtools::install_github("davidsjoberg/ggsankey")
