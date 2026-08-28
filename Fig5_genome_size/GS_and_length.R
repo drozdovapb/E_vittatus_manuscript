@@ -101,5 +101,7 @@ summary(glm(data = Evidat, formula = Length ~ Species * Sex))
 ggarrange(pGS, pBodyLength, common.legend = TRUE, 
           legend = "bottom", widths = c(2, 3))
 
-ggsave("Fig8_GS_BodyLength.png", dev=png,bg = "white",
+ggsave("Fig5_GS_BodyLength.png", dev=png,bg = "white",
        width=140, height=100, units = "mm", res=600)
+
+ggsave("Fig5.eps", bg = "white", width=140, height=100, units = "mm")
