@@ -236,9 +236,9 @@ plot_grid(pnetworks, ppatr_scaled, nrow=2, rel_heights = c(2, 1.2), labels = "AU
 #                  heights = c(2, 1.2), labels = "AUTO")
 
 ## and save Fig. 9
-ggsave("Fig9_Eu_sp_networks_patristic.png", bg = "white",
+ggsave("Fig6_Eu_sp_networks_patristic.png", bg = "white",
        width=24, height=18, units="cm", res=600, device=png)
-ggsave("Fig9_Eu_sp_networks_patristic.svg", bg = "white",
+ggsave("Fig6_Eu_sp_networks_patristic.svg", bg = "white",
        width=24, height=18, units="cm", device=svg)
 
 ## and all distances for the supplementary
